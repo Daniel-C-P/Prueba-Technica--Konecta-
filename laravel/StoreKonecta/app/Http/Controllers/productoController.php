@@ -154,4 +154,25 @@ class productoController extends Controller
 
         return redirect()->route('producto.index');
     }
+
+    public function mayorVenta ()
+    {
+        $maxValue = productos::max('Ventas');
+
+        $producto = productos::where('Ventas',$maxValue)->first();
+
+        return view('MayorVenta', compact('producto'));
+
+    }
+
+    public function mayorStock ()
+    {
+        $maxValue = productos::max('Stock');
+
+        $producto = productos::where('Stock',$maxValue)->first();
+
+
+        return view('MayorStock', compact('producto'));
+    }
+
 }

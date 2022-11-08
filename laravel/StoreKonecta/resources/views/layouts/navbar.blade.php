@@ -13,12 +13,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{url('producto')}}">Listar Productos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('producto.mayor')}}">Producto mas Vendido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('producto.stock')}}">Producto con Mayor Stock</a>
+              </li>
 
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>

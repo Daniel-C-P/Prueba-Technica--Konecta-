@@ -22,6 +22,6 @@ Route::resource('producto', productoController::class);
 
 Route::put('vender/{producto}', [productoController::class,'vender'])->name('producto.vender');
 
-
-
+Route::get('mayor/venta', [productoController::class,'mayorVenta'])->name('producto.mayor');
+Route::get('mayor/stock', [productoController::class,'mayorStock'])->name('producto.stock');
 
