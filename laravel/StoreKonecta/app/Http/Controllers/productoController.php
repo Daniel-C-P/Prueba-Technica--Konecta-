@@ -147,7 +147,7 @@ class productoController extends Controller
             $producto->Stock  = -1*($request->cantProduct - $producto->Stock);
             $producto->Ventas += $request->cantProduct;
             $producto->save();
-            dd($producto);
+
 
         }
 
